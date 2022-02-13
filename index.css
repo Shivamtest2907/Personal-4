@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+
+body {
+  background: url("https://i.pinimg.com/originals/42/90/2e/42902ee4fd0a2e11d56f56e6d0962f83.jpg");
+  font-family: "Poiret One", Segoe UI Light, cursive;
+  background-size: 100vw 250vh;
+}
+
+.up {
+  background: pink;
+  padding: 1%;
+  width: 50vw;
+  margin: 2% 0;
+  margin-left: 250px;
+  font-size: 2vw;
+}
+
+h1 {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0.3, #fff),
+    color-stop(0.45, #fff),
+    color-stop(0.6, #000),
+    color-stop(0.75, #000)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.outermain {
+  display: flex;
+  margin-left: 250px;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+img {
+  padding: 2%;
+  margin: 2%;
+  width: 20vw;
+}
+
+.main {
+  background: aliceblue;
+  opacity: 0.8;
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 900;
+  width: 70%;
+}
+
+#card {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#card .heart {
+  width: 260px;
+  height: 260px;
+  float: left;
+  margin-left: 250px;
+}
+#card .heart #circle {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: #d32f2f;
+}
+#card .heart #rec,
+#card .heart #rec2 {
+  margin-top: -60px;
+  width: 130px;
+  height: 130px;
+  background-color: #d32f2f;
+  border-radius: 35% 0 0 0;
+}
+#card .heart #half2 {
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+  margin-top: -330px;
+  margin-left: -200px;
+}
+#card #heart2 {
+  margin-top: -60px;
+  margin-left: -130px;
+}
+#card #heart2 #circle,
+#card #heart2 #rec {
+  background-color: #fff;
+}
+#card #heart2 #half2 #rec {
+  border-bottom: 1px solid #eee;
+  margin-top: -61px;
+}
+#card #message {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-left: -130px;
+  background-color: #333;
+  border-radius: 35% 0 35% 0;
+  text-align: center;
+  background: url("pic5.jpeg") center;
+  background-size: cover;
+  font-family: "Tangerine", cursive;
+  font-weight: 900;
+}
+#card #message h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: red;
+  width: 160px;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 60px;
+  margin-left: 16px;
+}
+#card #heart1 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-animation: closeLeft 2s ease-in-out forwards;
+  -moz-animation: closeLeft 2s ease-in-out forwards;
+  -ms-animation: closeLeft 2s ease-in-out forwards;
+  animation: closeLeft 2s ease-in-out forwards;
+}
+#card #heart2 {
+  -webkit-animation: closeRight 2s ease-in-out forwards;
+  -moz-animation: closeRight 2s ease-in-out forwards;
+  -ms-animation: closeRight 2s ease-in-out forwards;
+  animation: closeRight 2s ease-in-out forwards;
+}
+
+#card:hover #heart1 {
+  -webkit-animation: openLeft 2s ease-in-out forwards;
+  -moz-animation: openLeft 2s ease-in-out forwards;
+  -ms-animation: openLeft 2 ease-in-out forwards;
+  animation: openLeft 2s ease-in-out forwards;
+}
+#card:hover #heart2 {
+  -webkit-animation: openRight 2s ease-in-out forwards;
+  -moz-animation: openRight 2s ease-in-out forwards;
+  -ms-animation: openRight 2 ease-in-out forwards;
+}
+
+@-webkit-keyframes closeLeft {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(180deg);
+  }
+}
+@-moz-keyframes closeLeft {
+  from {
+    -moz-transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(180deg);
+  }
+}
+@-ms-keyframes closeLeft {
+  from {
+    -ms-transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(180deg);
+  }
+}
+@keyframes closeLeft {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@-moz-keyframes openLeft {
+  from {
+    -moz-transform: rotateY(180deg);
+  }
+  to {
+    -moz-transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes openLeft {
+  from {
+    -webkit-transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+  }
+}
+@-ms-keyframes openLeft {
+  from {
+    -ms-transform: rotateY(180deg);
+  }
+  to {
+    -ms-transform: rotateY(0deg);
+  }
+}
+@keyframes openLeft {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@-moz-keyframes openRight {
+  0% {
+    -moz-transform: rotateX(180deg);
+  }
+  100% {
+    -moz-transform: rotateX(0deg) rotateZ(180deg);
+  }
+}
+@-webkit-keyframes openRight {
+  0% {
+    -webkit-transform: rotateX(180deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) rotateZ(180deg);
+  }
+}
+@-ms-keyframes openRight {
+  0% {
+    -ms-transform: rotateX(180deg);
+  }
+  100% {
+    -ms-transform: rotateX(0deg) rotateZ(180deg);
+  }
+}
+@keyframes openRight {
+  0% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateZ(180deg);
+  }
+}
+@-webkit-keyframes closeRight {
+  from {
+    -webkit-transform: rotateX(0deg) rotate(180deg);
+  }
+  to {
+    -webkit-transform: rotateX(180deg);
+  }
+}
+@-moz-keyframes closeRight {
+  from {
+    -moz-transform: rotateX(0deg) rotate(180deg);
+  }
+  to {
+    -moz-transform: rotateX(180deg);
+  }
+}
+@-ms-keyframes closeRight {
+  from {
+    -ms-transform: rotateX(0deg) rotate(180deg);
+  }
+  to {
+    -ms-transform: rotateX(180deg);
+  }
+}
+@keyframes closeRight {
+  from {
+    transform: rotateX(0deg) rotate(180deg);
+  }
+  to {
+    transform: rotateX(180deg);
+  }
+}
